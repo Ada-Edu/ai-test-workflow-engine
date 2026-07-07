@@ -1,24 +1,22 @@
 {
   "name": "ai-test-workflow-engine",
-  "version": "1.0.0",
-  "description": "Multi-agent test generation system with adversarial quality review",
-  "main": "workflows/test-suite-generator.js",
-  "bin": {
-    "ai-test-workflow": "./bin/ai-test-workflow.js"
-  },
+  "version": "2.0.0",
+  "description": "Pure markdown multi-agent test generation system with adversarial quality review",
+  "main": "workflows/test-suite-generator.md",
   "scripts": {
-    "install-workflow": "cp workflows/test-suite-generator.js ~/.claude/workflows/ || cp workflows/test-suite-generator.js %USERPROFILE%\\.claude\\workflows\\",
-    "test": "echo \"Run workflow via: ai-test-workflow\" && exit 0"
+    "install": "echo 'Copy workflows/test-suite-generator.md to your project or ~/.claude/skills/' && exit 0"
   },
   "keywords": [
     "ai",
     "testing",
     "test-generation",
     "claude",
-    "workflow",
+    "claude-code",
+    "markdown-workflow",
     "multi-agent",
     "adversarial-testing",
-    "test-quality"
+    "test-quality",
+    "claude-orchestration"
   ],
   "repository": {
     "type": "git",
@@ -30,11 +28,7 @@
   "homepage": "https://github.com/Ada-Edu/ai-test-workflow-engine#readme",
   "author": "Ada-Edu",
   "license": "MIT",
-  "engines": {
-    "node": ">=14.0.0"
-  },
   "files": [
-    "bin/",
     "workflows/",
     "examples/",
     "README.md",
